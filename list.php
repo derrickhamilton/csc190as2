@@ -33,11 +33,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Morgan Freeman</td>
-        <td>9:00 am 03/10/18</td>
-        <td>I spotted Dr. Evil inhaling illegal substance by the Hempstead Tpke</td>
-      </tr>
+	<?php
+	    $sql = 'SELECT name, report, date FROM reports';
+	    $result = $conn->query($sql);
+	    if ($result->num_rows > 0) {
+		while ($row = $result->fetch_assoc()) {
+		    echo '<tr><td>'.$row['name'].'</td><td>'.$row['date'].'</td><td>'.$row['report'].'</td></tr>';
+		}
+	    } else {
+		echo 'Found no reports';
+	    }
+	    $conn->close();
+        ?>
     </tbody>
   </table>
   </div>
