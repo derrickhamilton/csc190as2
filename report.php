@@ -9,8 +9,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h2> Report Page  </h2>
- <form action="/action_page.php">
+ <div class="container">
+  <div class="panel panel-default text-center">
+  <div class="panel-heading">
+  <h2>Report Page</h2>
+  </div>
+  <div class="panel-body"> Fill in the required information then submit report</div>
+  <form action="/action_page.php">
   <div class="report-form">
     <label for="name">Enter Your Name:</label>
     <input type="name" class="report-form" id="name">
@@ -20,7 +25,7 @@
     <input type="report" class="report-form" id="report">
   </div>
   <button type="report" class="btn btn-default">Report</button>
-</form>
-
-
+  </form>
+  </div>
+  </div>
 </body>
