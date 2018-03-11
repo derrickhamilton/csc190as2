@@ -1,5 +1,6 @@
 <?php
-    //This is report.php
+    echo $_POST["user-name"]."<br>";
+    echo $_POST["user-report"]."<br>";
 ?>
 
 <head>
@@ -15,16 +16,16 @@
   <h2>Report Page</h2>
   </div>
   <div class="panel-body"> Fill in the required information then submit report</div>
-  <form action="/action_page.php">
+  <form method="post" action="/report.php">
   <div class="report-form">
     <label for="name">Enter Your Name:</label>
-    <input type="name" class="report-form" id="name">
+    <input type="text" class="report-form" name="user-name">
   </div>
   <div class="report-form">
     <label for="report">Where is Dr. Evil?</label>
-    <input type="report" class="report-form" id="report">
+    <input type="text" class="report-form" name="user-report">
   </div>
-  <button type="report" class="btn btn-default">Report</button>
+  <button type="submit" class="btn btn-default">Report</button>
   </form>
   </div>
   </div>
