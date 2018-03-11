@@ -1,6 +1,19 @@
 <?php
-    echo $_POST["user-name"]."<br>";
-    echo $_POST["user-report"]."<br>";
+    include('config.php');
+    $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
+    if ($conn->connect_error) {
+	die('Connection failed: '.$conn->connect_error.'<br>');
+    }
+
+    $timestamp = date('m/d/Y').' at '.date('h:ia');
+    $stmt = $conn->prepare('INSERT INTO reports (name, report, date) VALUES (?, ?, ?)');
+    $stmt->bind_param('sss', $_POST['user-name'], $_POST['user-report'], $timestamp);
+    $stmt->execute();
+
+    echo "Successful report submission <br>";
+
+    $stmt->close();
+    $conn->close();
 ?>
 
 <head>
