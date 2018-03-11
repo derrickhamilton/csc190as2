@@ -9,5 +9,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <h1>This is report.php</h1>
+	<h2> Report Page  </h2>
+ <form action="/action_page.php">
+  <div class="report-form">
+    <label for="name">Enter Your Name:</label>
+    <input type="name" class="report-form" id="name">
+  </div>
+  <div class="report-form">
+    <label for="report">Where is Dr. Evil?</label>
+    <input type="report" class="report-form" id="report">
+  </div>
+  <button type="report" class="btn btn-default">Report</button>
+</form>
+
+
 </body>
