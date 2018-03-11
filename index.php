@@ -6,4 +6,8 @@
 </head>
 <body>
   <h1>Welcome to Dwiddder</h1>
+  <p>Know where Dr. Evil is? Report his location here!</p>
+  <a href="/report.php" class="btn btn-default">Report</a><br>
+  <p>Want to see Dr. Evil's past locations? Look here!</p>
+  <a href="/list.php" class="btn btn-default">List</a>
 </body>
