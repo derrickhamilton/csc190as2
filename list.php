@@ -9,6 +9,35 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <h1>This is list.php</h1>
-  <p>Just a test</p>
+ <div class="container">
+        <div class="container">
+
+ <div class="panel panel-default text-center">
+    <div class="panel-heading">
+         <h2> Report List </h2>
+    </div>
+    <div class="panel-body">
+
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Reporter Name</th>
+        <th>Date and Time Reported</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Morgan Freeman</td>
+        <td>9:00 am 03/10/18</td>
+        <td>I spotted Dr. Evil inhaling illegal substance by the Hempstead Tpke</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </body>
