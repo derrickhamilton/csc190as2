@@ -10,4 +10,5 @@
 </head>
 <body>
   <h1>This is list.php</h1>
+  <p>Just a test</p>
 </body>
