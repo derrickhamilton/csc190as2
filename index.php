@@ -5,9 +5,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<div class="text-center">
   <h1>Welcome to Dwiddder</h1>
   <p>Know where Dr. Evil is? Report his location here!</p>
   <a href="/report.php" class="btn btn-default">Report</a><br>
   <p>Want to see Dr. Evil's past locations? Look here!</p>
   <a href="/list.php" class="btn btn-default">List</a>
+</div>
 </body>
