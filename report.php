@@ -4,15 +4,15 @@
     if ($conn->connect_error) {
 	die('Connection failed: '.$conn->connect_error.'<br>');
     }
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    	$timestamp = date('m/d/Y').' at '.date('h:ia');
+    	$stmt = $conn->prepare('INSERT INTO reports (name, report, date) VALUES (?, ?, ?)');
+    	$stmt->bind_param('sss', $_POST['user-name'], $_POST['user-report'], $timestamp);
+    	$stmt->execute();
+    	$stmt->close();
+	header('Location: /list.php');
+    }
 
-    $timestamp = date('m/d/Y').' at '.date('h:ia');
-    $stmt = $conn->prepare('INSERT INTO reports (name, report, date) VALUES (?, ?, ?)');
-    $stmt->bind_param('sss', $_POST['user-name'], $_POST['user-report'], $timestamp);
-    $stmt->execute();
-
-    echo "Successful report submission <br>";
-
-    $stmt->close();
     $conn->close();
 ?>
 
@@ -39,7 +39,7 @@
     <label for="report">Where is Dr. Evil?</label>
     <input type="text" class="report-form" name="user-report" required>
   </div>
-  <button type="submit" class="btn btn-default">Report</button>
+  <button type="submit" class="btn btn-default" name="btnSubmit">Report</button>
  <a href="/index.php" class="btn btn-default">Back</a> 
  </form>
   </div>
