@@ -32,11 +32,12 @@
   <form method="post" action="/report.php">
   <div class="report-form">
     <label for="name">Enter Your Name:</label>
-    <input type="text" class="report-form" name="user-name">
+    <input type="text" class="report-form" name="user-name" required>
+	
   </div>
   <div class="report-form">
     <label for="report">Where is Dr. Evil?</label>
-    <input type="text" class="report-form" name="user-report">
+    <input type="text" class="report-form" name="user-report" required>
   </div>
   <button type="submit" class="btn btn-default">Report</button>
  <a href="/index.php" class="btn btn-default">Back</a> 
