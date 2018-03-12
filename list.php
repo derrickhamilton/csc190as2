@@ -45,8 +45,10 @@
 	    }
 	    $conn->close();
         ?>
+	
     </tbody>
   </table>
+	<a href="/report.php" class="btn btn-default">Back</a>
   </div>
 </div>
 </div>
