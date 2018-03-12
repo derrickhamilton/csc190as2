@@ -39,7 +39,8 @@
     <input type="text" class="report-form" name="user-report">
   </div>
   <button type="submit" class="btn btn-default">Report</button>
-  </form>
+ <a href="/index.php" class="btn btn-default">Back</a> 
+ </form>
   </div>
   </div>
 </body>
