@@ -40,7 +40,7 @@
     <input type="text" class="report-form" name="user-report" required>
   </div>
   <button type="submit" class="btn btn-default" name="btnSubmit">Report</button>
- <a href="/index.php" class="btn btn-default">Back</a> 
+ <a href="/index.php" class="btn btn-default">Home</a> 
  </form>
   </div>
   </div>

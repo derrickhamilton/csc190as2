@@ -48,7 +48,7 @@
 	
     </tbody>
   </table>
-	<a href="/report.php" class="btn btn-default">Back</a>
+	<a href="/index.php" class="btn btn-default">Home</a>
   </div>
 </div>
 </div>
